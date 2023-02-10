@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>โค้ดแรกของผม</h1>
+    <p id="time"></p>
+    <!-- การใช้งานมีทั้งหมด 3 แบบ -->
+    <!-- แบบที่ 1 -->
+    <button onclick="show();">โชว์เวลา</button>
+    <script>
+      function show() {
+        document.getElementById("time").innerText = new Date();
+      }
+    </script>
+    
+    <!-- แบบที่ 2 -->
+    <button onclick="document.getElementById('time').innerText = new Date();">โชว์เวลา</button>
+    
+    <!-- แบบที่ 3 -->
+    <button onclick="show();">โชว์เวลา</button>
+    <script src="main.js"></script>
+    <!--
+      ภายในไฟล์ main.js
+      ----------------
+      function show() {
+        document.getElementById("time").innerText = new Date();
+      }
+    -->
+  </body>
+</html>
